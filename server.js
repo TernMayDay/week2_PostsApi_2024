@@ -47,7 +47,7 @@ const requestListener = async(req, res) => {
         errorHandle(res)
       } 
     })
-  } else if ( req.url === 'posts' && req.method === 'DELETE') {
+  } else if ( req.url === '/posts' && req.method === 'DELETE') {
     // 刪除全部貼文
     const newPosts = await Posts.deleteMany({})
     successHandle(res, newPosts)
