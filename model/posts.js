@@ -36,7 +36,7 @@ const postsSchema = new mongoose.Schema({
     type: Number,
     default: 0
   },
-});
+},{ versionKey: false } );
 
 const posts = mongoose.model(
   'posts',
