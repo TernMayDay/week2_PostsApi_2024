@@ -4,11 +4,8 @@
 
 - Mongoose 連接遠端資料庫
 - dotenv 加上環境變數，讓程式更安全
-  config.env 忽略，不能在 GitHub 上
 - 部署到 Render 主機
 - 提供 Postman API
 
-## 關於
-
-- nodejs 20.10.0
+版本號：node 20.10.0
 指令：`nodemon server.js`
