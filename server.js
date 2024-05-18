@@ -51,7 +51,7 @@ const requestListener = async(req, res) => {
     // 刪除全部貼文
     const newPosts = await Posts.deleteMany({})
     successHandle(res, newPosts)
-  } else if ( req.ur.startsWith('/posts/') && req.method === 'DELETE') {
+  } else if ( req.url.startsWith('/posts/') && req.method === 'DELETE') {
     // 刪除一則貼文
     try {
       const id = req.url.split('/').pop()
@@ -61,7 +61,7 @@ const requestListener = async(req, res) => {
     } catch (error) {
       errorHandle(res)
     }
-  } else if ( req.url.startsWith('posts') && req.method === 'PATCH') {
+  } else if ( req.url.startsWith('/posts/') && req.method === 'PATCH') {
     req.on('end' , async () => {
       try {
         const id = req.url.split('/').pop()
