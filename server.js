@@ -67,7 +67,7 @@ const requestListener = async(req, res) => {
         const id = req.url.split('/').pop()
         const updateData = JSON.parse(body)
         await Posts.findByIdAndUpdate(id, updateData)
-        const postData = Posts.find()
+        const postData = await Posts.find()
         successHandle(res, postData)
       } catch (error) {
         errorHandle(res)
