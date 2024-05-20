@@ -6,6 +6,7 @@
 - dotenv 加上環境變數，讓程式更安全
 - 部署到 Render 主機
 - 提供 Postman API
+- [API 路徑](https://week2-postsapi-2024.onrender.com/)
 
 版本號：node 20.10.0
 指令：`nodemon server.js`
