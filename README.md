@@ -15,7 +15,7 @@
 ### 從 routes / index.js 拆分
 
 1. controllers / http.js：設置 http request
-1. controllers / posts.js：設置 posts request
+2. controllers / posts.js：設置 posts request
 
 指令：`npm start`
 
@@ -25,6 +25,7 @@
 * dotenv 加上環境變數，讓程式更安全
 * 部署到 Render 主機
 * 提供 Postman API
+* [API 路徑](https://week2-postsapi-2024.onrender.com/)
 
 版本號：node 20.10.0
 指令：`nodemon server.js`
