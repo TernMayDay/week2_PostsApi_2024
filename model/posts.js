@@ -4,12 +4,16 @@ const postsSchema = new mongoose.Schema({
     type: String,
     required: [true, '貼文姓名 未填寫']
   },
-  tags: [
-    {
-      type: String,
-      required: [true, '貼文標籤 tags 未填寫']
+  tags: {
+    type: [String],
+    required: [true, '貼文標籤 tags 未填寫'],
+    validate: {
+      validator: function(value) {
+        return value.length > 0;
+      },
+      message: '貼文標籤 tags 未填寫'
     }
-  ],
+  },
   type: {
     type: String,
     enum:['group','person'],
