@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const postsSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, '貼文姓名未填寫']
+    required: [true, '貼文 姓名 未填寫']
   },
   tags: [
     {
