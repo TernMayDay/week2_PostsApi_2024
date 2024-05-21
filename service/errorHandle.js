@@ -1,10 +1,13 @@
 const headers = require('./headers')
-module.exports =  (res) => {
+module.exports = ({ res, error }) => {
+  let errorMessages = error.message
+  if(error.errors) {
+    errorMessages = Object.values(error.errors).map(error => error.message);
+  }
   res.writeHead(400, headers)
   res.write(JSON.stringify({
     status: false,
-    message: '欄位不正確或無此id',
-    error: error
+    message: errorMessages || error.message,
   }))
   res.end()
 }
