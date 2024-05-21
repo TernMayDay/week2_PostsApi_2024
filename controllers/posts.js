@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const successHandle = require('../service/successHandle')
 const errorHandle = require('../service/errorHandle')
 const Posts = require('../model/posts')
