@@ -17,6 +17,7 @@
 1. controllers / http.js：設置 http request
 2. controllers / posts.js：設置 posts request
 
+* [API 路徑](https://week2-postsapi-2024-imitate-express.onrender.com/)
 指令：`npm start`
 
 ## [設計一個/ posts 路由](https://github.com/TernMayDay/week2_PostsApi_2024)

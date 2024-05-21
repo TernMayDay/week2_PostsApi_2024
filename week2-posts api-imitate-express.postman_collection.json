@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "39e9435b-bb56-4e0d-8496-8fa59ce02967",
-		"name": "week2-posts api",
+		"_postman_id": "a3cd6177-4dbb-49a8-9051-4b3fbfd98f7b",
+		"name": "week2-posts api-imitate-express",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "33189110"
 	},
@@ -24,10 +24,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://week2-postsapi-2024.onrender.com/posts",
+					"raw": "https://week2-postsapi-2024-imitate-express.onrender.com/posts",
 					"protocol": "https",
 					"host": [
-						"week2-postsapi-2024",
+						"week2-postsapi-2024-imitate-express",
 						"onrender",
 						"com"
 					],
@@ -45,7 +45,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"keven\",\n    \"tags\": \"運動\",\n    \"type\": \"group\",\n    \"image\":\"https://picsum.photos/id/866/4704/3136\",\n    \"content\": \" 貼文內容呀-2\",\n    \"likes\": 0,\n    \"comments\": 0\n}",
+					"raw": "{\n    \"name\": \"keven\",\n    \"tags\": \"運動\",\n    \"type\": \"group\",\n    \"image\":\"https://picsum.photos/id/866/4704/3136\",\n    \"content\": \" 貼文內容呀-1\",\n    \"likes\": 0,\n    \"comments\": 0\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -53,10 +53,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://week2-postsapi-2024.onrender.com/posts",
+					"raw": "https://week2-postsapi-2024-imitate-express.onrender.com/posts",
 					"protocol": "https",
 					"host": [
-						"week2-postsapi-2024",
+						"week2-postsapi-2024-imitate-express",
 						"onrender",
 						"com"
 					],
@@ -73,10 +73,10 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://week2-postsapi-2024.onrender.com/posts",
+					"raw": "https://week2-postsapi-2024-imitate-express.onrender.com/posts",
 					"protocol": "https",
 					"host": [
-						"week2-postsapi-2024",
+						"week2-postsapi-2024-imitate-express",
 						"onrender",
 						"com"
 					],
@@ -93,15 +93,16 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://week2-postsapi-2024.onrender.com/posts",
+					"raw": "https://week2-postsapi-2024-imitate-express.onrender.com/posts/664c21f733483bcc6ccb225c",
 					"protocol": "https",
 					"host": [
-						"week2-postsapi-2024",
+						"week2-postsapi-2024-imitate-express",
 						"onrender",
 						"com"
 					],
 					"path": [
-						"posts"
+						"posts",
+						"664c21f733483bcc6ccb225c"
 					]
 				}
 			},
@@ -111,7 +112,29 @@
 			"name": "修改一筆posts",
 			"request": {
 				"method": "PATCH",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"keven\",\n    \"tags\": \"瑜伽\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week2-postsapi-2024-imitate-express.onrender.com/posts/664c21fb33483bcc6ccb225e",
+					"protocol": "https",
+					"host": [
+						"week2-postsapi-2024-imitate-express",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"664c21fb33483bcc6ccb225e"
+					]
+				}
 			},
 			"response": []
 		}
